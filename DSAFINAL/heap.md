@@ -26,7 +26,7 @@ A binary tree is **complete** if:
 2. The last level is filled **from left to right** without any gaps.
 
 ```text
-       ✅ VALID COMPLETE TREE          ❌ INVALID (NOT COMPLETE)
+         VALID COMPLETE TREE          INVALID (NOT COMPLETE)
 
                (10)                           (10)
               /    \                         /    \
