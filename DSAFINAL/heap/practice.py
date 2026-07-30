@@ -1,3 +1,7 @@
+#Min Heap without class
+# Insertion
+#     |
+# Percolate-up
 arr = []
 
 def insert(val):
