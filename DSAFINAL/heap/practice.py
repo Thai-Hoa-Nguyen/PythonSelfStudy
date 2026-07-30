@@ -1,22 +1,23 @@
-class MinHeap:
-    def __init__(self):
-        self.arr = []
+arr = []
 
-    def insert(self, val):
-        self.arr.append(val)
-        self.percolate_up(len(self.arr) - 1)
+def insert(val):
+    arr.append(val)
+    percolate_up(len(arr) - 1)
 
-    def parent(self, val):
-        return (val - 1) // 2
-        
-    def percolate_up(self, index):
-        while index > 0:
+def parent(val):
+    return (val - 1) // 2
+
+def percolate_up(val):
+    while val > 0 and arr[val] < arr[parent(val)]:
+        parent_idx = parent(val)
+        arr[val], arr[parent_idx] = arr[parent_idx], arr[val]
+        val = parent_idx
 
 
-  
-heap = MinHeap()
+#Test
+insert(10)
+insert(4)
+insert(20)
+insert(2)
 
-for num in [15,10]:
-    heap.insert(num)
-
-print(heap.arr)
+print(arr)

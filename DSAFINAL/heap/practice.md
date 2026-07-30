@@ -16,6 +16,8 @@ arr = [5,8,20,15,10]
 Add a method that returns the smallest value without removing it.
 Expected:
 ```python
+    
+
 heap = MinHeap()
 
 for num in [15, 10, 20, 5, 8]:
