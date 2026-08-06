@@ -43,8 +43,3 @@ tree.insert(60)
 tree.insert(80)
 
 tree.inorder(tree.root)
-
-# EXECUTION_TIME: 0.916
-
-
-#EXECUTION_TIME: 0.844
