@@ -66,7 +66,7 @@ for epoch in range(500):
 print("\nModel training complete!\n")
 
 # 5. Test the AI on a brand new sentence it has never seen
-test_sentence = "i love code"
+test_sentence = "this is amazing hate great"
 test_vector = sentence_to_vector(test_sentence, vocab)
 
 # Tell PyTorch we are just testing, not training anymore
