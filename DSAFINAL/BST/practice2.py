@@ -31,4 +31,3 @@ arr.insert(3)
 arr.insert(2)
 
 arr.display(arr)
-
