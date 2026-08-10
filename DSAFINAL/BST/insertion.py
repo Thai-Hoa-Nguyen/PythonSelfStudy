@@ -47,3 +47,44 @@ class BST:
         print(node.data)
         self.preorder(node.left)
         self.preorder(node.right)
+
+    def remove(self, value):
+        self.root = self._remove(self.root, value)
+
+    def _remove(self, node, value):
+    # we reach empty spot
+        if node is None:
+            return None
+        
+        #search left
+        if value < node.value:
+            node.left = self._remove(node.left, value)
+        elif value > node.value:
+            node.right = self._remove(node.right, value)
+        else:
+            #case 1
+            if node.left is None and node.right is None:
+                return None
+            
+            #case 2 only right child
+            if node.left is None:
+                return node.right
+
+            #case 2
+            if node.right is None:
+                return node.left
+            
+            #case 3 2 children
+            successor = self._find_min(node.right)
+
+            node.value = successor.value
+
+            node.right = self._remove(node.right, successor.value)
+
+            return node
+
+    def _find_min(self, node):
+        while node.left:
+            node = node.left
+            
+        return node
