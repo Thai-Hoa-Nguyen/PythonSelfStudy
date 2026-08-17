@@ -6,4 +6,4 @@ import pandas as pd
 
 #read a json file
 df = pd.read_json("data.json")
-print(df.to_string())
+print(df)
