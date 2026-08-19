@@ -27,14 +27,24 @@ data = {
 
 df = pd.DataFrame(data, index = ["Student 1","Student 2","Student 3","Student 4","Student 5" ])
 
-print("===DATA FRAME===")
-print(df)
-print(f"==={text.upper()}===")
-#There are 2 ways to do
-# head() or use slicing
-# tail() or use slicing
-print(df[:3])
-print(f"==={text2.upper()}====")
-print(df.tail(2))
+# print("===DATA FRAME===")
+# print(df)
+# print(f"==={text.upper()}===")
+# #There are 2 ways to do
+# # head() or use slicing
+# # tail() or use slicing
+# print(df[:3])
+# print(f"==={text2.upper()}====")
+# print(df.tail(2))
 
-print(df.info())
+# print(df.info())
+
+# Find the average age.
+# Find the average GPA.
+# Find the highest GPA.
+# Find the lowest GPA.
+# Find the student with the highest GPA.
+
+print(df.mean(numeric_only = True))
+
+
